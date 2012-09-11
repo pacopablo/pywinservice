@@ -6,7 +6,8 @@ Scaffolding for running Python programs as Windows NT Services
 
 Usage
 --------
-::
+
+.. code-block:: python
 
     from pywinservice import NTService, NTServiceThread, handle_command_line
 
