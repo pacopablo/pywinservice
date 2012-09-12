@@ -31,5 +31,9 @@ Usage
         handle_command_line(MyService)
 
 
+The service can then be installed via the command line with:
+
+python myservice.py --install
+
 Notes
 ---------

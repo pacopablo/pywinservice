@@ -21,7 +21,7 @@ from threading import Thread, Event
 
 __all__ = [
     'NTServiceThread',
-    'NTServiceFramework',
+    'NTService',
     'handle_command_line',
 ]
 
@@ -86,7 +86,7 @@ class NTServiceThread(Thread):
 
 
 
-class NTServiceFramework(win32serviceutil.ServiceFramework):
+class NTService(win32serviceutil.ServiceFramework):
     """ Windows NT Service class for running a bottle.py server """
 
     _svc_name_ = ''
@@ -167,11 +167,11 @@ class NTServiceFramework(win32serviceutil.ServiceFramework):
 
 
 
-def handle_command_line(srv_class):
+def handle_command_line(svc_class):
     """ Handle command line for installing and removing services
 
     Yes, this is a simple wrapper around win32serviceutil.HandleCommandLine,
     but I want to present a consistent interface via pywinservice
     """
 
-    win32serviceutil.HandleCommandLine(srv_class)
+    win32serviceutil.HandleCommandLine(svc_class)
