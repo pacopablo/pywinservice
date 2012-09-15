@@ -9,4 +9,4 @@
 # Author: John Hampton <pacopablo@pacopablo.com>
 __author__ = 'John Hampton <pacopablo@pacopablo.com>'
 
-from service import NTService, handle_command_line
+from service import NTService, NTServiceThread, handle_command_line

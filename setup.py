@@ -13,7 +13,7 @@ from setuptools import setup
 
 setup(
     name='pywinservice',
-    version='0.8',
+    version='0.8.1',
     packages=['pywinservice'],
     author='John Hampton',
     author_email='pacopablo@pacopablo.com',
